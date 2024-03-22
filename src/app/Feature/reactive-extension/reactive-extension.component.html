@@ -1,5 +1,5 @@
-<div class="main">
- <div class="conatiner1">
+<div class="main" [ngStyle]="{'background-color' :ChangeColor()}">
+ <div class="conatiner1">{{dateValue | date:'dd/MM/yyyy'}}
  <div><h1>List of Reactive extension library operators</h1></div>
  <div><label for="Operators">Operators List</label></div>
  <ul>
@@ -11,4 +11,13 @@
     <p id="paraGraph" #paraGraph>
      </p>
  </div>
-</div>
+ <div class="conatiner3">
+  <div><h1>Operations using RXJS Operators</h1></div>
+  <div>
+    <button (click)="ChangeColor()">Click-Me-ToUpdate-Page-Background</button>
+  </div>
+  <div> <button (click)="countIncrese()">count</button> </div>
+  <div>{{str | stringModify }}</div>
+ </div>
+ </div>
+

@@ -6,7 +6,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { SubtitleDirective } from './shared/subtitle.directive';
-import { ReactiveExtensionComponent } from './Feature/reactive-extension/reactive-extension.component';
+import { ReactiveExtensionComponent, stringModifyPipe } from './Feature/reactive-extension/reactive-extension.component';
+import { SlideToggleComponent } from './Feature/slide-toggle/slide-toggle.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AboutComponent } from './shared/navigation/about/about.component';
+import { FeaturedComponent } from './shared/navigation/featured/featured.component';
+import { CareerComponent } from './shared/navigation/career/career.component';
+import { ProjectsComponent } from './shared/navigation/projects/projects.component';
+import { ContactComponent } from './shared/navigation/contact/contact.component';
+
 
 @NgModule({
   declarations: [
@@ -14,11 +22,19 @@ import { ReactiveExtensionComponent } from './Feature/reactive-extension/reactiv
     HeaderComponent,
     FooterComponent,
     SubtitleDirective,
-    ReactiveExtensionComponent
+    ReactiveExtensionComponent,
+    stringModifyPipe,
+    SlideToggleComponent,
+    AboutComponent,
+    FeaturedComponent,
+    CareerComponent,
+    ProjectsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
